@@ -13,7 +13,7 @@ use Filament\Tables\Table;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
-use Illuminate\Database\Eloquent\Builder;
+use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\ImageColumn;
@@ -35,19 +35,22 @@ class MemberResource extends Resource
                 TextInput::make('tw_url')->url()->label('Twitter URL'),
                 TextInput::make('in_url')->url()->label('Instagram URL'),
                 TextInput::make('li_url')->url()->label('Linkedin URL'),
-                FileUpload::make('image'),
                 Select::make('status')->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ])->required(),
-            ]);
+                FileUpload::make('image')
+                    ->image()
+                    ->imageCropAspectRatio('1:1') // Ensures the image is square
+                    ->previewable(true), // Enables preview in edit mode
+                ]);
     }
 
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
-                ImageColumn::make('image')->width(100),
+                ImageColumn::make('image')->width(100)->height(100),
                 TextColumn::make('name'),
                 TextColumn::make('designation'),
 

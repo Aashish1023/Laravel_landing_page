@@ -6,6 +6,10 @@ use App\Filament\Resources\MemberResource;
 use Filament\Actions;
 use Filament\Resources\Pages\EditRecord;
 use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
+
 use Filament\Notifications\Notification;
 
 class EditMember extends EditRecord
