@@ -26,6 +26,8 @@ Route::get('/course{id}',ShowCourse::class)->name('coursePage');
 Route::get('/team',ShowTeamPage::class)->name('teamPage');
 
 Route::get('/blog',ShowBlog::class)->name('blog');
+Route::get('/article{id}',ShowCourse::class)->name('articlePage');
+
 
 
 ?>

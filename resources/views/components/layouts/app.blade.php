@@ -127,7 +127,7 @@
 
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Our Newsletter</h4>
-          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <p>Join us and receive the latest news about our products and services!</p>
           <form action="forms/newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
             <div class="loading">Loading</div>
@@ -140,13 +140,16 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Mentor</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">NIFT Nepal</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">      
+        Designed and Developed by
+        <a href="https://www.linkedin.com/in/ashish-maharjan-4b40022a3/">
+          Ashish Maharjan
+        </a> | 
+        <a href="https://www.linkedin.com/in/goma-silwal-8b7b54293/">
+          Goma Silwal
+        </a>
+        Distributed by <a href="#">NIFT
       </div>
     </div>
 
@@ -156,7 +159,7 @@
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
-  {{-- <div id="preloader"></div> --}}
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="{{ asset('front/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>

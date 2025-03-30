@@ -71,20 +71,15 @@
                     <div class="course-content">
                       <div class="d-flex justify-content-between align-items-center mb-3">
                         <p class="category">{{ $article->title}}</p>
-                        {{-- <p class="price">$169</p> --}}
                         <p class="time">{{\Carbon\carbon::parse($article->created_at)->format('d M, Y')}}</p>
                       </div>
                       <h3><a href="course-details.html">{{ $article->title}}</a></h3>
-                      <p class="description">{{ Str::limit($article->content, 100) }}</p>
+                      <p class="description"> {!! Str::limit($article->content, 100) !!} </p>
+
                       <div class="trainer d-flex justify-content-between align-items-center">
                         <div class="trainer-profile d-flex align-items-center">
                           <img src="assets/img/trainers/trainer-1-2.jpg" class="img-fluid" alt="">
                           <a href="" class="trainer-link">{{ $article->author }}</a>
-                        </div>
-                        <div class="trainer-rank d-flex align-items-center">
-                          {{-- <i class="bi bi-person user-icon"></i>&nbsp;50
-                          &nbsp;&nbsp;
-                          <i class="bi bi-heart heart-icon"></i>&nbsp;65 --}}
                         </div>
                       </div>
                     </div>
@@ -97,30 +92,25 @@
   
             </div>
     
-          </div>
-    
+          </div>     
         </section><!-- /blog Section -->
 
         <!-- Tabs Section -->
-        <section id="tabs" class="tabs section">
-
-            <div class="container" data-aos="fade-up" data-aos-delay="100">
-      
-              <div class="row">
-                <div class="col-lg-3">
-                  <ul class="nav nav-tabs flex-column">
-                    @if ($categories->isNOtEmpty())
-                        @foreach ($categories as $category)
-                            <li class="nav-item">
-                                <a class="nav-link active show" data-bs-toggle="tab" href="{{ route('blog').'?category='.$category->slug }}">{{ $category->name}}</a>
-                            </li>    
-                        @endforeach    
-                    @endif
-                    
-                   
-                  </ul>
-                </div>
-                <div class="col-lg-9 mt-4 mt-lg-0">
+        {{-- <section id="tabs" class="tabs section">
+          <div class="container" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+              <div class="col-lg-3">
+                <ul class="nav nav-tabs flex-column">
+                  @if ($categories->isNotEmpty())
+                    @foreach ($categories as $category)
+                      <li class="nav-item">
+                        <a class="nav-link active show" data-bs-toggle="tab" href="{{ route('blog').'?category='.$category->slug }}">{{ $category->name}}</a>
+                      </li>    
+                    @endforeach    
+                  @endif
+                </ul>
+              </div>
+              <div class="col-lg-9 mt-4 mt-lg-0">
                   <div class="tab-content">
                     <div class="tab-pane active show" id="tab-1">
                       <div class="row">
@@ -185,9 +175,9 @@
                   </div>
                 </div>
               </div>
-      
             </div>
-      
-          </section><!-- /Tabs Section -->
+          </div>      
+        </section> --}}
+        <!-- /Tabs Section -->
 
   </main>
