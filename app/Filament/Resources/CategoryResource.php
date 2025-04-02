@@ -29,8 +29,8 @@ class CategoryResource extends Resource
         return $form
             ->schema([
                 TextInput::make('name')->required()->placeholder('Enter the category Name')
-                ->live(onBlur: true)
-                ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state))),
+                ->live('onBlur')
+                ->afterStateUpdated(fn (callable $set, ?string $state) => $set('slug', Str::slug($state))),
                 TextInput::make('slug')->required()->placeholder('Enter the category Slug'),
                 Select::make('status')->options([
                     1 => 'Active',

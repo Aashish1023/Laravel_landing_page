@@ -31,7 +31,9 @@ class ArticleResource extends Resource
         return $form
             ->schema([
                 TextInput::make('title')->required()->placeholder('Title'),
-                Select::make('category_id')->label('Category')->options(Category::all()->pluck('name', 'id')),
+                Select::make('category_id')
+                    ->label('Category')
+                    ->options(Category::all()->pluck('name')),
                 TextInput::make('author')->placeholder('Author'),
                 FileUpload::make('image'),
                 RichEditor::make('content')->columnSpan(2),
