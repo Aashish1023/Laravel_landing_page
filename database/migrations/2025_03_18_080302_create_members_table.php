@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('in_url')->nullable();
             $table->string('li_url')->nullable();
             $table->string('image')->nullable();
+            $stable->string('description')->nullable();
             $table->integer('status')->default(1);
             $table->timestamps();
         });

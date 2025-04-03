@@ -35,6 +35,11 @@ class MemberResource extends Resource
                 TextInput::make('tw_url')->url()->label('Twitter URL'),
                 TextInput::make('in_url')->url()->label('Instagram URL'),
                 TextInput::make('li_url')->url()->label('Linkedin URL'),
+                TextInput::make('li_url')->url()->label('Linkedin URL'),
+                TextInput::make('description')
+                    ->label('About Member')
+                    ->placeholder('Enter Description')
+                    ->required(),
                 Select::make('status')->options([
                     1 => 'Active',
                     0 => 'Inactive',
