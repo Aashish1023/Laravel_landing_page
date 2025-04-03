@@ -23,11 +23,11 @@ class EditCategory extends EditRecord
         return $this->getResource()::getUrl('index');
     }
 
-    protected function getSavedNotification(): ?Notification
-    {
-        return Notification::make()
-            ->success()
-            ->title('Category Updated')
-            ->body('Category has been updated successfully.');
-    }
+    protected function getCreatedNotification(): ?Notification
+        {
+            return Notification::make()
+                ->success()
+                ->title('Category Created')
+                ->body('Category has been created successfully.');
+       }
 }

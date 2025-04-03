@@ -31,6 +31,6 @@
     <div class="member-info text-center">
         <h4>{{ $member->name }}</h4>
         <span>{{ $member->designation }}</span>
-        <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p>
+        {{-- <p>Aliquam iure quaerat voluptatem praesentium possimus unde laudantium vel dolorum distinctio dire flow</p> --}}
     </div>
 </div><!-- End Team Member -->
