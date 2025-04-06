@@ -33,7 +33,7 @@ class ArticleResource extends Resource
                 TextInput::make('title')->required()->placeholder('Title'),
                 Select::make('category_id')
                     ->label('Category')
-                    ->options(Category::all()->pluck('name')),
+                    ->options(Category::query()),
                 TextInput::make('author')->placeholder('Author'),
                 FileUpload::make('image'),
                 RichEditor::make('content')->columnSpan(2),

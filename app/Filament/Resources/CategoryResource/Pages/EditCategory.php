@@ -22,7 +22,6 @@ class EditCategory extends EditRecord
     {
         return $this->getResource()::getUrl('index');
     }
-
     protected function getCreatedNotification(): ?Notification
         {
             return Notification::make()
