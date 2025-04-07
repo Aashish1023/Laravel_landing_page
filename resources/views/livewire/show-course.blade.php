@@ -5,9 +5,11 @@
       <div class="heading">
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
-            <div class="col-lg-8">
+            <div class="col-lg-6">
               <h1>Course Details</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-0">
+                "Discover the art of fashion and transform your creativity into stunning designs with our expert-led courses!"
+              </p>
             </div>
           </div>
         </div>
@@ -37,7 +39,7 @@
           </div>
           <div class="col-lg-4">
 
-            <div class="course-info d-flex justify-content-between align-items-center">
+            {{-- <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Trainer</h5>
               <p><a href="#">Walter White</a></p>
             </div>
@@ -45,16 +47,16 @@
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Course Fee</h5>
               <p>$165</p>
-            </div>
+            </div> --}}
 
             <div class="course-info d-flex justify-content-between align-items-center">
-              <h5>Available S eats</h5>
-              <p>30</p>
+              <h5>Available Seats</h5>
+              <p>20</p>
             </div>
 
             <div class="course-info d-flex justify-content-between align-items-center">
               <h5>Schedule</h5>
-              <p>5.00 pm - 7.00 pm</p>
+              <p>11.00 am - 2.00 pm</p>
             </div>
 
           </div>

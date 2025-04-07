@@ -26,7 +26,7 @@ class EditCategory extends EditRecord
         {
             return Notification::make()
                 ->success()
-                ->title('Category Created')
-                ->body('Category has been created successfully.');
+                ->title('Category Updated')
+                ->body('Category has been Updated successfully.');
        }
 }
