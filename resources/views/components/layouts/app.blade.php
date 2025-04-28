@@ -47,9 +47,8 @@
           <li><a href="about.html">About</a></li>
           <li><a wire:navigate href="{{ route('coursesPage')}}" >Courses</a></li>
           <li><a wire:navigate href="{{ route('teamPage') }}">Our Team</a></li>
-          <li><a href="events.html">Events</a></li>
           <li><a wire:navigate href="{{ route('blog')}}">Blog</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -86,15 +85,24 @@
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
+          <a href="#" class="logo d-flex align-items-center">
             <span class="sitename">NIFT</span>
           </a>
+          <p><strong>National Institute of Art & Fashion Technology</strong></p>
           <div class="footer-contact pt-3">
-            <p>Yala Road</p>
-            <p>Kupondole, Lalitpur</p>
+            <strong>Address:</strong>
+            <a href="https://maps.app.goo.gl/G2k2xAqMg8HfL86x5" target="_blank">
+              <p>
+                <b>Yala Road Kupondole, Lalitpur Nepal</b>
+              </p>
+            </a>
             <p class="mt-3"><strong>Phone:</strong> <span>+977 984-9336410
             </span></p>
-            <p><strong>Email:</strong> <span>nift.edu8@gmail.com</span></p>
+            <p><strong>Email:</strong> 
+              <a href="mailto:nift.edu8@gmail.com?subject=Inquiry%20from%20Website&body=Dear%20Fashion%20Institute,">
+                 nift.edu8@gmail.com
+              </a>
+           </p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
