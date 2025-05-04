@@ -5,6 +5,8 @@ use App\Livewire\ShowCourse;
 use App\Livewire\ShowCoursePage;
 use App\Livewire\ShowTeamPage;
 use App\Livewire\ShowBlog;
+use App\Livewire\BlogDetail;
+
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -26,6 +28,9 @@ Route::get('/course{id}',ShowCourse::class)->name('coursePage');
 Route::get('/team',ShowTeamPage::class)->name('teamPage');
 
 Route::get('/blog',ShowBlog::class)->name('blog');
+Route::get('/blog/{id}',BlogDetail::class)->name('blogDetail');
+
+
 Route::get('/article{id}',ShowCourse::class)->name('articlePage');
 
 

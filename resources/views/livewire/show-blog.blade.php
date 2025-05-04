@@ -38,7 +38,7 @@
                     </div>
                     <div class="card-body">
                       <h5 class="card-title">
-                        <a href="">{{ $article->title }}</a>
+                        <a wire:navigate href="{{ route('blogDetail',$article->id) }}">{{ $article->title }}</a>
                       </h5>
                       <div class="d-flex justify-content-between align-items-center mb-3">
                         <a href="" class="trainer-link">{{ $article->author }}</a>
@@ -93,7 +93,7 @@
                                 </div>
                                 <div class="flex-grow-1">
                                   <h5 class="h6 mb-0">
-                                    <a class="text-black" href="blog-details.html">{{ $latestArticle->title }}</a>
+                                    <a class="text-black" wire:navigate href="{{route('blogDetail',$article->id )}}">{{ $latestArticle->title }}</a>
                                   </h5>
                                   <small>{{ \Carbon\Carbon::parse($latestArticle->created_at)->format('d M, Y') }}</small>
                                 </div>
