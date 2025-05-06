@@ -12,22 +12,22 @@
         </nav>
       </div><!-- End Page Title -->
     <section id="courses-course-details" class="courses-course-details section">
-
-      <div class="container" data-aos="fade-up">
-
-        <div class="row">
-          <div class="col-lg-8">
-            <img src="assets/img/course-details.jpg" class="img-fluid" alt="">
-            <h3>Et enim incidunt fuga tempora</h3>
-            <p>
-              Qui et explicabo voluptatem et ab qui vero et voluptas. Sint voluptates temporibus quam autem. Atque nostrum voluptatum laudantium a doloremque enim et ut dicta. Nostrum ducimus est iure minima totam doloribus nisi ullam deserunt. Corporis aut officiis sit nihil est. Labore aut sapiente aperiam.
-              Qui voluptas qui vero ipsum ea voluptatem. Omnis et est. Voluptatem officia voluptatem adipisci et iusto provident doloremque consequatur. Quia et porro est. Et qui corrupti laudantium ipsa.
-              Eum quasi saepe aperiam qui delectus quaerat in. Vitae mollitia ipsa quam. Ipsa aut qui numquam eum iste est dolorum. Rem voluptas ut sit ut.
-            </p>
-          </div>
-         
+        <div class="container" data-aos="fade-up">
+            <div class="row">
+            <div class="col-lg-10">
+                <h2>{{ $article->title}}</h2>
+                <div>
+                    <p class="time">
+                        {{\Carbon\carbon::parse($article->created_at)->format('d M, Y')}}
+                        / Author: <a href="#">{{$article->author}}</a>
+                    </p>
+                </div>
+                <img src="{{asset('storage/' . $article->image)}}" class="img-fluid" alt="">
+                <p>
+                    {!! $article->content !!}
+                </p> 
+            </div>    
         </div>
-
       </div>
 
     </section><!-- /Courses Course Details Section -->
