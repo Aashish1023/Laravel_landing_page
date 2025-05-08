@@ -32,13 +32,13 @@
                     <div class="accordion-item bg-transparent border-top border-bottom py-3">
                         <h2 class="accordion-header" id="faqAccountHeading-{{ $x }}">
                             <button class="accordion-button collapsed bg-transparent fw-bold shadow-none link-primary" type="button" data-bs-toggle="collapse" data-bs-target="#faqAccountCollapse-{{ $x }}" aria-expanded="false" aria-controls="faqAccountCollapse-{{ $x }}">
-                                {{ $faq->question }}
+                                {{!! $faq->question !!}}
                             </button>
                         </h2>
                         <div id="faqAccountCollapse-{{ $x }}"> class="accordion-collapse collapse" aria-labelledby="faqAccountHeading-{{ $x }}">
                             <div class="accordion-body">
                                 <p>
-                                    {{ $faq->answer }}
+                                    {{!! $faq->answer !!}}
                                 </p>
                             </div>
                         </div>
