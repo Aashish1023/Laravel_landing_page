@@ -48,6 +48,7 @@
           <li><a wire:navigate href="{{ route('coursesPage')}}" >Courses</a></li>
           <li><a wire:navigate href="{{ route('teamPage') }}">Our Team</a></li>
           <li><a wire:navigate href="{{ route('blog')}}">Blog</a></li>
+          <li><a wire:navigate href="{{ route('faqs')}}">FAQ</a></li>
           <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
