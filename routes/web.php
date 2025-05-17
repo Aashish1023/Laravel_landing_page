@@ -7,6 +7,7 @@ use App\Livewire\ShowTeamPage;
 use App\Livewire\ShowBlog;
 use App\Livewire\BlogDetail;
 use App\Livewire\ShowFaqPage;
+use App\Livewire\ShowPage;
 
 
 use Illuminate\Support\Facades\Route;
@@ -37,5 +38,6 @@ Route::get('/article{id}',ShowCourse::class)->name('articlePage');
 
 Route::get('/faqs',ShowFaqPage::class)->name('faqs');
 
+Route::get('/page{id}',ShowPage::class)->name('page');
 
 ?>

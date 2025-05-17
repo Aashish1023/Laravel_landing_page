@@ -4,8 +4,8 @@
     <div class="container">
       <div class="row justify-content-md-center">
         <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-          <h2 class="mb-4 display-5 text-center">Frequently Asked Questions</h2>
-          <p class="text-secondary text-center lead fs-4">Welcome to our FAQ page, your one-stop resource for answers to commonly asked questions.</p>
+          <h2 class="mb-4 display-5 text-center">Still have questions about NIFT Nepal?</h2>
+          <p class="text-secondary text-center lead fs-4">Find answers to some of the most frequently asked questions here.</p>
           {{-- <p class="mb-5 text-center">Whether you're a new customer looking to learn more about what we offer or a long-time user seeking clarification on specific topics, this page has clear and concise information about our products and services.</p> --}}
           <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
         </div>

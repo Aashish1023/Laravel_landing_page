@@ -44,7 +44,7 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a wire:navigate href="{{ route('home')}}" class="active">Home<br></a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a wire:navigate href="{{ route("page",1) }}">About Us</a></li>
           <li><a wire:navigate href="{{ route('coursesPage')}}" >Courses</a></li>
           <li><a wire:navigate href="{{ route('teamPage') }}">Our Team</a></li>
           <li><a wire:navigate href="{{ route('blog')}}">Blog</a></li>
@@ -119,8 +119,8 @@
             <li><a href="#">Home</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="{{ route("page",2) }}">Terms of service</a></li>
+            <li><a href="{{ route("page",1) }}">Privacy policy</a></li>
           </ul>
         </div>
 
