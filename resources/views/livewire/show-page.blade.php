@@ -6,7 +6,9 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>{{ $page->title }}<br></h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-0">
+
+                </p>
             </div>
           </div>
         </div>
@@ -34,7 +36,7 @@
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            {{!! $page->content !!}}
+            {{!! $page->content !!}}>
           </div>
 
         </div>

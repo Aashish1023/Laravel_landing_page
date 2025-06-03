@@ -66,7 +66,7 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a wire:navigate href="{{ route('contact') }}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -120,7 +120,7 @@
             <li><a href="#">About us</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="{{ route("page",2) }}">Terms of service</a></li>
-            <li><a href="{{ route("page",1) }}">Privacy policy</a></li>
+            <li><a href="{{ route("page",2) }}">Privacy policy</a></li>
           </ul>
         </div>
 
