@@ -3,6 +3,8 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Mail\ContactEmail;
+use Illuminate\Support\Facades\Mail;    
 
 class ShowContactPage extends Component
 {
@@ -22,9 +24,21 @@ class ShowContactPage extends Component
         $this->validate();
         // Here you can handle the form submission logic, like sending an email or saving to the database
         // For now, we'll just reset the fields
-        $this->reset(['name', 'email', 'message']);
+        // $this->reset(['name', 'email', 'message']);
+
+        // session()->flash('success', 'Your message has been sent successfully!');
+
+        $mailData = [
+            'Subject' => 'You Have Received a New Contact Email',
+            'name' => $this->name,
+            'email' => $this->email,
+            'message' => $this->message,
+        ];
+
+        Mail::to('andy@example.com')->Send(new ContactEmail($mailData));
 
         session()->flash('success', 'Your message has been sent successfully!');
+        $this->redirect('/contact');
     }
 
 
