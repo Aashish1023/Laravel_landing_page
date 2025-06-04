@@ -69,18 +69,21 @@
                       
                   @enderror" placeholder="Your Name" required="">
                     @error('name')
-                        <p class="invalid-feedback">{{ $message }}</p>
-                        
+                        <p class="invalid-feedback">{{ $message }}</p>                        
                     @enderror
                 </div>
 
                 <div class="col-md-6 ">
-                  <input wire:model="email" type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                    <input wire:model="email" type="email" class="form-control @error('email') is-invalid @enderror" id="email" value="{{ old('email') }}" autocomplete="email" autofocus @if($errors->has('email')) aria-describedby="email-error" @endif aria-invalid="@error('email') true @else false         
+                    @enderror" name="email" placeholder="Your Email" required="">
+                    @error('email')
+                        <p class="invalid-feedback">{{ $message }}</p>               
+                    @enderror
                 </div>
 
-                <div class="col-md-12">
+                {{-- <div class="col-md-12">
                   <input  type="text" class="form-control" name="subject" placeholder="Subject" required="">
-                </div>
+                </div> --}}
 
                 <div class="col-md-12">
                   <textarea wire:model="message" class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
