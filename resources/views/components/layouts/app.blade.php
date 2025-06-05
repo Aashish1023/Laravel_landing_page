@@ -127,8 +127,8 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            @foreach (getServices() as $service)
-              <li><a href="#"> {{ service->title}}</a></li>
+            @foreach (getCourses() as $course)
+              <li><a href="#"> {{ $course->title}}</a></li>
             @endforeach
             {{-- <li><a href="#">Fashion Design</a></li>
             <li><a href="#">Diploma in Fashion Designing</a></li>

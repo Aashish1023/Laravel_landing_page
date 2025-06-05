@@ -1,8 +1,9 @@
 <?php
-use App\Models\Service;
+use App\Models\Course;
 
-function getServices(){
-    $Service::orderBy('title','ASC')->where('status',1)->get();
-    return $services;
+
+function getCourses(){
+    $Courses = Course::orderBy('title','ASC')->where('status',1)->get();
+    return $Courses;
 }
 ?>
