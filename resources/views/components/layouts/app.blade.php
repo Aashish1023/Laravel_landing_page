@@ -127,9 +127,12 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#">Fashion Design</a></li>
+            @foreach (getServices() as $service)
+              <li><a href="#"> {{ service->title}}</a></li>
+            @endforeach
+            {{-- <li><a href="#">Fashion Design</a></li>
             <li><a href="#">Diploma in Fashion Designing</a></li>
-            <li><a href="#">Special Courses</a></li>
+            <li><a href="#">Special Courses</a></li> --}}
           </ul>
         </div>
 
