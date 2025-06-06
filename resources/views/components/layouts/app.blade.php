@@ -49,7 +49,7 @@
           <li><a wire:navigate href="{{ route('teamPage') }}">Our Team</a></li>
           <li><a wire:navigate href="{{ route('blog')}}">Blog</a></li>
           <li><a wire:navigate href="{{ route('faqs')}}">FAQ</a></li>
-          <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          {{-- <li class="dropdown"><a href="#"><span>Events</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -65,7 +65,7 @@
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
             </ul>
-          </li>
+          </li> --}}
           <li><a wire:navigate href="{{ route('contact') }}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
@@ -117,8 +117,8 @@
           <h4>Useful Links</h4>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
+            <li><a wire:navigate href="{{ route("page",2) }}">About us</a></li>
+            <li><a href="{{ route("teamPage") }}">Our Teams</a></li>
             <li><a href="{{ route("page",2) }}">Terms of service</a></li>
             <li><a href="{{ route("page",2) }}">Privacy policy</a></li>
           </ul>
@@ -128,11 +128,8 @@
           <h4>Our Services</h4>
           <ul>
             @foreach (getCourses() as $course)
-              <li><a href="#"> {{ $course->title}}</a></li>
+              <li><a wire:navigate href="{{ route('coursePage',$course->id)}}"> {{ $course->title}}</a></li>
             @endforeach
-            {{-- <li><a href="#">Fashion Design</a></li>
-            <li><a href="#">Diploma in Fashion Designing</a></li>
-            <li><a href="#">Special Courses</a></li> --}}
           </ul>
         </div>
 
