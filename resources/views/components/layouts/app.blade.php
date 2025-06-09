@@ -38,7 +38,9 @@
       <a wire:navigate href="{{ route('home') }}" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h3 class="sitename">Landing Page</h3>
+        <h3 class="sitename">
+          {{-- <img src="{{ asset('storage/'.$settings->logo) }}" class="img-fluid" alt=""> --}}
+        </h3>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -151,13 +153,13 @@
       <p>© <span>Copyright</span> <strong class="px-1 sitename">NIFT Nepal</strong> <span>All Rights Reserved</span></p>
       <div class="credits">      
         Designed and Developed by
-        <a href="https://www.linkedin.com/in/ashish-maharjan-4b40022a3/">
+        <a href="https://www.linkedin.com/in/ashish-maharjan-4b40022a3/" target="_blank">
           Ashish Maharjan
         </a> | 
-        <a href="https://www.linkedin.com/in/goma-silwal-8b7b54293/">
+        <a href="https://www.linkedin.com/in/goma-silwal-8b7b54293/" target="_blank">
           Goma Silwal
         </a>
-        Distributed by <a href="#">NIFT
+        Distributed by <a href="#">NIFT Nepal
       </div>
     </div>
 
