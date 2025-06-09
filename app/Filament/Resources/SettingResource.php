@@ -10,6 +10,12 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\Textarea;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -32,18 +38,23 @@ class SettingResource extends Resource
                 TextInput::make('insta_url')->url()->label('Instagram URL'),
                 TextInput::make('li_url')->url()->label('Linkedin URL'),
                 TextInput::make('description')
-                    ->label('About Member')
+                    ->label('About organization')
                     ->placeholder('Enter Description')
                     ->required(),
                 Select::make('status')->options([
                     1 => 'Active',
                     0 => 'Inactive',
                 ])->required(),
-                FileUpload::make('logo')
+                FileUpload::make('logo') //main logo
                     ->image()
                     ->imageCropAspectRatio('1:1') // Ensures the image is square
                     ->previewable(true), // Enables preview in edit mode
+                FileUpload::make('logo_footer') //footer logo
+                    ->image()
+                    ->imageCropAspectRatio('1:1') // Ensures the image is square
+                    ->previewable(true), // Enables preview in edit mode    
                 ]);
+                
     }
 
     public static function table(Table $table): Table
