@@ -4,55 +4,20 @@
     <section id="hero" class="hero section light-background">
       <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
+                      <img src="{{ asset('front/img/hero-bg.jpg') }}" alt="A group of diverse young adults smiling and collaborating around a laptop in a bright modern workspace with large windows and greenery visible outside conveying a positive and energetic atmosphere. The text Learning Today Leading Tomorrow appears in bold on the image." data-aos="fade-in">
+
           <div class="carousel-item active">
-            <img src="assets/front/img/course-1.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
+            <img src="{{ asset('front/img/hero-bg.jpg') }}" alt="A group of diverse young adults smiling and collaborating around a laptop in a bright modern workspace with large windows and greenery visible outside conveying a positive and energetic atmosphere. The text Learning Today Leading Tomorrow appears in bold on the image." data-aos="fade-in">
             <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="{{ route("coursesPage") }}" wire:navigate class="btn-get-started">Get Started</a>
+              <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
+                <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
+                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+                  <a href="{{ route("coursesPage") }}" wire:navigate class="btn-get-started">Get Started</a>
+                </div>
+            </div>         
+          </div>        
         </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>Some representative placeholder content for the first slide.</p>
-            </div>
-          </div>
-        </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
       </div>
-
-      {{-- 
-      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in">
-
-      <div class="container">
-        <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-        <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="{{ route("coursesPage") }}" wire:navigate class="btn-get-started">Get Started</a>
-        </div>
-      </div> --}}
-
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
@@ -102,22 +67,22 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="64" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="purecounter"></span>
               <p>Courses</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="42" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="10+" data-purecounter-duration="1" class="purecounter"></span>
               <p>Events</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Trainers</p>
+              <span data-purecounter-start="0" data-purecounter-end="24+" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Projects</p>
             </div>
           </div><!-- End Stats Item -->
 
@@ -136,10 +101,9 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="why-box">
-              <h3>Why Choose Our Products?</h3>
+              <h3>Why Choose Us?</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-                Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+                With a team of skilled professionals and years of hands-on experience, we deliver solutions that meet the highest industry standards.
               </p>
               <div class="text-center">
                 <a href="#" class="more-btn"><span>Learn More</span> <i class="bi bi-chevron-right"></i></a>
@@ -153,24 +117,26 @@
               <div class="col-xl-4">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-clipboard-data"></i>
-                  <h4>Corporis voluptates officia eiusmod</h4>
-                  <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                  <h4> Creative Excellence in Design</h4>
+                  <p>Our team of passionate designers crafts visuals that not only look stunning but also communicate your brand’s story with impact.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-gem"></i>
-                  <h4>Ullamco laboris ladore pan</h4>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                  <h4>End-to-End Fashion Branding</h4>
+                  <p>From logo to lookbook, website to social media—we cover every angle of your fashion journey with cohesive, high-quality design.</p>
                 </div>
               </div><!-- End Icon Box -->
 
               <div class="col-xl-4" data-aos="fade-up" data-aos-delay="400">
                 <div class="icon-box d-flex flex-column justify-content-center align-items-center">
                   <i class="bi bi-inboxes"></i>
-                  <h4>Labore consequatur incidid dolore</h4>
-                  <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
+                  <h4>Collaborative & Transparent Workflow</h4>
+                  <p>
+                    You’re part of the process. We value your input and ensure every project reflects your authentic voice and vision.
+                  </p>
                 </div>
               </div><!-- End Icon Box -->
 
@@ -310,7 +276,7 @@
     </section><!-- /Courses Section -->
 
     <!-- Trainers Index Section -->
-    <section id="trainers-index" class="section trainers-index">
+    {{-- <section id="trainers-index" class="section trainers-index">
 
       <div class="container">
 
@@ -377,6 +343,6 @@
 
       </div>
 
-    </section><!-- /Trainers Index Section -->
+    </section><!-- /Trainers Index Section --> --}}
 
   </main>
