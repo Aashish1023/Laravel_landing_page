@@ -2,22 +2,18 @@
 
     <!-- Hero Section -->
     <section id="hero" class="hero section light-background">
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-inner">
-                      <img src="{{ asset('front/img/hero-bg.jpg') }}" alt="A group of diverse young adults smiling and collaborating around a laptop in a bright modern workspace with large windows and greenery visible outside conveying a positive and energetic atmosphere. The text Learning Today Leading Tomorrow appears in bold on the image." data-aos="fade-in">
-
-          <div class="carousel-item active">
-            <img src="{{ asset('front/img/hero-bg.jpg') }}" alt="A group of diverse young adults smiling and collaborating around a laptop in a bright modern workspace with large windows and greenery visible outside conveying a positive and energetic atmosphere. The text Learning Today Leading Tomorrow appears in bold on the image." data-aos="fade-in">
-            <div class="container">
-              <h2 data-aos="fade-up" data-aos-delay="100">Learning Today,<br>Leading Tomorrow</h2>
-                <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
-                <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-                  <a href="{{ route("coursesPage") }}" wire:navigate class="btn-get-started">Get Started</a>
-                </div>
-            </div>         
-          </div>        
-        </div>
-      </div>
+      <img src="{{ asset('front/img/hero-bg.jpg') }}" alt="A group of diverse young adults smiling and collaborating around a laptop in a bright modern workspace with large windows and greenery visible outside conveying a positive and energetic atmosphere. The text Learning Today Leading Tomorrow appears in bold on the image." data-aos="fade-in">
+        <div class="container">
+          <h2 data-aos="fade-up" data-aos-delay="100">
+            Learning Today,<br>Leading Tomorrow
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="200">
+            We are team of talented designers making websites and Fashion Entrepreneurship with a passion for creativity and innovation.
+          </p>
+          <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
+            <a href="{{ route("coursesPage") }}" wire:navigate class="btn-get-started">Get Started</a>
+          </div>
+        </div>         
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
@@ -28,19 +24,18 @@
         <div class="row gy-4">
 
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="100">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="{{ asset('front/img/about.jpg') }}" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-6 order-2 order-lg-1 content" data-aos="fade-up" data-aos-delay="200">
-            <h3>Voluptatem dignissimos provident quasi corporis</h3>
+            <h3>Where Style Meets Innovation: Learn Fashion, Design & Technology Together</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              Empower your creativity with future-ready skills that blend art, style, and smart tech.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Master hands-on techniques in fashion designing, digital illustration, and UI/UX—guided by industry experts.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Explore how tools like Adobe, AutoCAD, and AI-powered design software are reshaping modern fashion and design industries.</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Build a portfolio that employers notice—combining timeless style with cutting-edge tech for real-world success.</span></li>
             </ul>
             <a href="#" class="read-more"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
           </div>
@@ -74,14 +69,14 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="10+" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
               <p>Events</p>
             </div>
           </div><!-- End Stats Item -->
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item text-center w-100 h-100">
-              <span data-purecounter-start="0" data-purecounter-end="24+" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
               <p>Projects</p>
             </div>
           </div><!-- End Stats Item -->
@@ -159,84 +154,84 @@
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="100">
             <div class="features-item">
               <i class="bi bi-eye" style="color: #ffbb2c;"></i>
-              <h3><a href="" class="stretched-link">Lorem Ipsum</a></h3>
+              <h3><a href="" class="stretched-link">Vision</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="200">
             <div class="features-item">
               <i class="bi bi-infinity" style="color: #5578ff;"></i>
-              <h3><a href="" class="stretched-link">Dolor Sitema</a></h3>
+              <h3><a href="" class="stretched-link"> Limitless Creativity</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="300">
             <div class="features-item">
               <i class="bi bi-mortarboard" style="color: #e80368;"></i>
-              <h3><a href="" class="stretched-link">Sed perspiciatis</a></h3>
+              <h3><a href="" class="stretched-link">Master Your Core</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="400">
             <div class="features-item">
               <i class="bi bi-nut" style="color: #e361ff;"></i>
-              <h3><a href="" class="stretched-link">Magni Dolores</a></h3>
+              <h3><a href="" class="stretched-link">Customization</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="500">
             <div class="features-item">
               <i class="bi bi-shuffle" style="color: #47aeff;"></i>
-              <h3><a href="" class="stretched-link">Nemo Enim</a></h3>
+              <h3><a href="" class="stretched-link">Colloboration</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="600">
             <div class="features-item">
               <i class="bi bi-star" style="color: #ffa76e;"></i>
-              <h3><a href="" class="stretched-link">Eiusmod Tempor</a></h3>
+              <h3><a href="" class="stretched-link">Achivement</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="700">
             <div class="features-item">
               <i class="bi bi-x-diamond" style="color: #11dbcf;"></i>
-              <h3><a href="" class="stretched-link">Midela Teren</a></h3>
+              <h3><a href="" class="stretched-link">Content</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="800">
             <div class="features-item">
               <i class="bi bi-camera-video" style="color: #4233ff;"></i>
-              <h3><a href="" class="stretched-link">Pira Neve</a></h3>
+              <h3><a href="" class="stretched-link">Shows</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="900">
             <div class="features-item">
               <i class="bi bi-command" style="color: #b2904f;"></i>
-              <h3><a href="" class="stretched-link">Dirada Pack</a></h3>
+              <h3><a href="" class="stretched-link">Design</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1000">
             <div class="features-item">
               <i class="bi bi-dribbble" style="color: #b20969;"></i>
-              <h3><a href="" class="stretched-link">Moton Ideal</a></h3>
+              <h3><a href="" class="stretched-link">Motion</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1100">
             <div class="features-item">
               <i class="bi bi-activity" style="color: #ff5828;"></i>
-              <h3><a href="" class="stretched-link">Verdo Park</a></h3>
+              <h3><a href="" class="stretched-link">Move Forward/a></h3>
             </div>
           </div><!-- End Feature Item -->
 
           <div class="col-lg-3 col-md-4" data-aos="fade-up" data-aos-delay="1200">
             <div class="features-item">
               <i class="bi bi-brightness-high" style="color: #29cc61;"></i>
-              <h3><a href="" class="stretched-link">Flavor Nivelanda</a></h3>
+              <h3><a href="" class="stretched-link">Visual</a></h3>
             </div>
           </div><!-- End Feature Item -->
 
